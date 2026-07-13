@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F7F5F1;
+  --foreground: #0F2A4A;
+  --navy: #0F2A4A;
+  --navy-light: #1D3B5C;
+  --teal: #0E7C6B;
+  --teal-light: #EBF7F5;
+  --amber: #B8791E;
+  --amber-light: #FDF8ED;
+  --slate: #4A5D6E;
+  --border: #E6E2DA;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-teal: var(--teal);
+  --color-teal-light: var(--teal-light);
+  --color-amber: var(--amber);
+  --color-amber-light: var(--amber-light);
+  --color-slate: var(--slate);
+  --color-border: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom styles for professional dashboard layouts */
+.shadow-card {
+  box-shadow: 0 4px 20px -2px rgba(15, 42, 74, 0.04), 0 2px 6px -1px rgba(15, 42, 74, 0.02);
+}
+
+.border-card {
+  border: 1px solid var(--border);
+}
+
+/* Remove scrollbar for clean UI where appropriate */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
